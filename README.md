@@ -17,6 +17,13 @@ ArXiv paper: [https://arxiv.org/abs/1911.00536](https://arxiv.org/abs/1911.00536
 
 ## News ##
 
+***(Update 06/23/2021) We have released a retrieval-augmented/grounded version of DialoGPT (RetGen), please check out the [RetGen repo](https://github.com/dreasysnail/RetGen)  and [RetGen paper](https://arxiv.org/abs/2105.06597)***
+
+***(Update 05/20/2021) An awesome [video walkthrough](https://www.youtube.com/watch?v=Zo679MYoJns) on YouTube for DialoGPT by [Prakhar Mishra](http://wsl.iiitb.ac.in/prakhar-mishra/)***
+
+***(Update 03/31/2021) A 3rd party demo by [AK391](https://github.com/AK391) using Gradio [web demo](https://gradio.app/g/AK391/DialoGPT) try it out***
+
+
 ***(Update 09/15/2020) A set of large-scale [dialog ranking models](https://github.com/golsun/DialogRPT) has been released!***
 
 DialoGPT generation is improved by integrating with our latest dialog ranking models, [DialogRPT](https://github.com/golsun/DialogRPT)
@@ -48,6 +55,7 @@ Please check out our model cards in huggingface Transformers repository. With se
 - [https://github.com/LHolten/DialoGTP-MMI-decoder](https://github.com/LHolten/DialoGTP-MMI-decoder) An MMI implementation by LHolten,[ref](https://github.com/microsoft/DialoGPT/issues/3#issuecomment-558318401)
 - [https://colab.research.google.com/drive/1-_KjlAV3J1IVDw_9KogjKDCzgFY7Jp7E](https://colab.research.google.com/drive/1-_KjlAV3J1IVDw_9KogjKDCzgFY7Jp7E) A colab interactive notebook by illuminascent@Reddit,[ref](https://www.reddit.com/r/MachineLearning/comments/dt5woy/p_dialogpt_state_of_the_art_conversational_model/?st=k530k3oo&sh=f6cd20fd)
 - [https://colab.research.google.com/drive/15wa925dj7jvdvrz8_z3vU7btqAFQLVlG](https://colab.research.google.com/drive/15wa925dj7jvdvrz8_z3vU7btqAFQLVlG) A great tutorial of how to finetune DialoGPT to build a customized bot built by [Rostyslav Neskorozhenyi](https://www.linkedin.com/in/slanj/). [ref](https://towardsdatascience.com/make-your-own-rick-sanchez-bot-with-transformers-and-dialogpt-fine-tuning-f85e6d1f4e30) 
+- [https://gradio.app/g/AK391/DialoGPT](https://gradio.app/g/AK391/DialoGPT) A 3rd party demo by [AK391](https://github.com/AK391) using Gradio [web demo](https://gradio.app/g/AK391/DialoGPT)  
 
 <!--**This github repository will be updated soon. Please stay tuned.**-->
 <!--## Minimal Computational Configurations-->
@@ -216,7 +224,7 @@ See below for some third-party decoding methods:
 - [https://github.com/andreamad8/DialoGPT2-Interact](https://github.com/andreamad8/DialoGPT2-Interact) An interactive script featuring multiturn chatbot by andreamad8,[ref](https://github.com/microsoft/DialoGPT/issues/3#issuecomment-551450016)
 - [https://github.com/LHolten/DialoGTP-MMI-decoder](https://github.com/LHolten/DialoGTP-MMI-decoder) An MMI implementation by LHolten,[ref](https://github.com/microsoft/DialoGPT/issues/3#issuecomment-558318401)
 - [https://colab.research.google.com/drive/1-_KjlAV3J1IVDw_9KogjKDCzgFY7Jp7E](https://colab.research.google.com/drive/1-_KjlAV3J1IVDw_9KogjKDCzgFY7Jp7E) A colab interactive notebook by illuminascent@Reddit,[ref](https://www.reddit.com/r/MachineLearning/comments/dt5woy/p_dialogpt_state_of_the_art_conversational_model/?st=k530k3oo&sh=f6cd20fd)
-
+- [https://gradio.app/g/AK391/DialoGPT](https://gradio.app/g/AK391/DialoGPT) A 3rd party demo by [AK391](https://github.com/AK391) using Gradio [web demo](https://gradio.app/g/AK391/DialoGPT)  
 
 ## Models
 
@@ -224,10 +232,10 @@ We release 6 fine-tuned models which can be further fine-tuned on low-resource  
 
 | Model           |  Fine-tuned from GPT-2| Trained from scratch
 |----------------------|--------|--------|
-| DialoGPT 762M model| [\[link\]](https://convaisharables.blob.core.windows.net/lsp/multiref/large_ft.pkl) [\[huggingface model card\]](https://huggingface.co/microsoft/DialoGPT-large)  | [\[link\]](https://convaisharables.blob.core.windows.net/lsp/multiref/large_fs.pkl) |
-| DialoGPT 345M model| [\[link\]](https://convaisharables.blob.core.windows.net/lsp/multiref/medium_ft.pkl) [\[huggingface model card\]](https://huggingface.co/microsoft/DialoGPT-medium) | [\[link\]](https://convaisharables.blob.core.windows.net/lsp/multiref/medium_fs.pkl) | 
-| DialoGPT 117M model| [\[link\]](https://convaisharables.blob.core.windows.net/lsp/multiref/small_ft.pkl) [\[huggingface model card\]](https://huggingface.co/microsoft/DialoGPT-small)| [\[link\]](https://convaisharables.blob.core.windows.net/lsp/multiref/small_fs.pkl) | 
-| DialoGPT 345M model (reverse, for MMI)| [link](https://convaisharables.blob.core.windows.net/lsp/multiref/small_reverse.pkl) | -| 
+| DialoGPT 762M model| [\[link\]](https://acvrpublicycchen.blob.core.windows.net/dialogpt/multiref/large_ft.pkl) [\[huggingface model card\]](https://huggingface.co/microsoft/DialoGPT-large)  | [\[link\]](https://acvrpublicycchen.blob.core.windows.net/dialogpt/multiref/large_fs.pkl) |
+| DialoGPT 345M model| [\[link\]](https://acvrpublicycchen.blob.core.windows.net/dialogpt/multiref/medium_ft.pkl) [\[huggingface model card\]](https://huggingface.co/microsoft/DialoGPT-medium) | [\[link\]](https://acvrpublicycchen.blob.core.windows.net/dialogpt/multiref/medium_fs.pkl) | 
+| DialoGPT 117M model| [\[link\]](https://acvrpublicycchen.blob.core.windows.net/dialogpt/multiref/small_ft.pkl) [\[huggingface model card\]](https://huggingface.co/microsoft/DialoGPT-small)| [\[link\]](https://acvrpublicycchen.blob.core.windows.net/dialogpt/multiref/small_fs.pkl) | 
+| DialoGPT 345M model (reverse, for MMI)| [link](https://acvrpublicycchen.blob.core.windows.net/dialogpt/multiref/small_reverse.pkl) | -| 
 | [DialogRPT](https://github.com/golsun/DialogRPT) (**new** ranking models) | [link](https://github.com/golsun/DialogRPT) | -| 
 
 
@@ -293,7 +301,7 @@ To fine-tune the `345M` DialoGPT model on the DSTC-7 challenge data on a server 
 python3 -m torch.distributed.launch --nproc_per_node=8 train_LSP.py --init_checkpoint ./models/medium/medium_ft.pkl --train_input_file ./data/DSTC_train.db --eval_input_file ./data/DSTC_valid.tsv --model_name_or_path ./model/medium/ --learning_rate 1e-4  --train_batch_size 64 --eval_batch_size 64 --no_token_id
 ```
 
-The trained model can be found at [DSTC medium model](https://convaisharables.blob.core.windows.net/lsp/DSTC/medium_ft.pkl)
+The trained model can be found at [DSTC medium model](https://acvrpublicycchen.blob.core.windows.net/dialogpt/DSTC/medium_ft.pkl)
 
 
 #### Evaluation
@@ -553,6 +561,8 @@ top_p | `float` | `0.9` | Nucleus filtering (top-p) before sampling (`<=0.0`: no
 -->
 
 ## Related Project
+
+* RetGen: [https://github.com/dreasysnail/RetGen](https://github.com/dreasysnail/RetGen). Retrieval-augmented/grounded DialoGPT and beyond. RetGen is a joint training framework that simultaneously optimizes a dense passage retriever and a knowledge-grounded text generator in an end-to-end fashion. 
 
 * Microsoft ICECAPS: [https://github.com/microsoft/icecaps](https://github.com/microsoft/icecaps). 
 
